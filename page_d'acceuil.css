@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f6f0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 99;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  background-color: #ff5c95;
+  border-bottom: 2.5px solid black;
+}
+
+.navbar input {
+  height: 32px;
+  width: 250px;
+  border-radius: 5px;
+  position: relative;
+  left: 250px;
+  border: none;
+}
+
+.search-icon {
+  position: relative;
+  left: 25px;
+}
+
+.navbar input::placeholder {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-decoration: underline 1.5px;
+  padding-left: 60px;
+}
+
+.navbar h2:hover {
+  cursor: pointer;
+}
+
+.navbar .navlinks {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  z-index: 1;
+}
+
+.navlinks a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  left: 20px;
+  font-size: 150%;
+}
+
+.message-icons {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  left: 30px;
+  font-size: 150%;
+}
+
+.profil-icons {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  left: 10px;
+  font-size: 150%;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.navbar h2 {
+  position: relative;
+  left: 150px;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 4px 1px 8px rgb(76, 76, 76);
+}
+
+.section-gauche .profil {
+  width: 80%;
+  height: 30%;
+  background-image: url(pictures/markus-spiske-iABDznUDy6c-unsplash.jpg),
+    linear-gradient(to bottom, transparent 30%, #adfbf0 30%);
+  background-size: cover;
+  border-radius: 8px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.profil h3 {
+  padding: auto;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.profil .profil-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background-image: url(pictures/mec.jpeg);
+  background-size: cover;
+  margin: auto;
+}
+
+.profil .profil-pic,
+h3,
+p:hover {
+  cursor: pointer;
+}
+
+.profil p {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.section-gauche .container-suggestion {
+  width: 80%;
+  height: 50%;
+  background-color: #adfbf0;
+  border-radius: 8px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.section-gauche .suggestion {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-suggestion h3 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-top: 10px;
+}
+
+.suggestion .pics {
+  background-image: url(pictures/meuf.jpeg);
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+#profil-name {
+  margin: 20px;
+}
+
+.suggestion span {
+  font-weight: 500;
+}
+
+.suggestion p {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.suggestion .pics,
+span,
+p:hover {
+  cursor: pointer;
+}
+
+.suggestion button {
+  width: 60px;
+  height: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff5c95;
+  color: white;
+  font-weight: 500;
+  margin: auto;
+}
+
+.suggestion button:hover {
+  background-color: #feffcd;
+  color: black;
+  cursor: a;
+}
+
+.section-gauche {
+  position: fixed;
+  top: 20px;
+  width: 25%;
+  height: 100%;
+  margin-top: 50px;
+}
+.section-droite {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  margin-top: 50px;
+}
+.section-droite .notification {
+  width: 80%;
+  height: 30%;
+  background-color: #adfbf0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.notification h3 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.notification #menu-burger {
+  font-size: 160%;
+  padding-top: 13px;
+  padding-right: 20px;
+}
+
+.notification #notif-icon {
+  font-size: 160%;
+  padding-top: 13px;
+  padding-left: 20px;
+}
+
+#menu-burger,
+#notif-icon:hover {
+  cursor: pointer;
+}
+
+.notif-bubble1 {
+  border: 1px solid #ff5c95;
+  border-radius: 25px;
+  width: 85%;
+  height: 27%;
+  position: absolute;
+  top: 45%;
+  right: 8%;
+  background-color: aliceblue;
+  box-shadow: 1px 3px 10px black;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.notif-bubble2 {
+  border: 1px solid #ff5c95;
+  border-radius: 25px;
+  width: 85%;
+  height: 27%;
+  position: absolute;
+  top: 80%;
+  right: 8%;
+  background-color: aliceblue;
+  box-shadow: 1px 3px 10px black;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.notif-bubble1,
+.notif-bubble2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.notif-bubble1,
+.notif-bubble2:hover {
+  cursor: pointer;
+}
+
+#profil-pics1 {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url(pictures/yngarab.jpeg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+}
+
+#profil-pics2 {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url(pictures/rbeu.jpeg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+}
+
+#title-post {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+
+#description {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  text-align: right;
+  padding: 1px 5px;
+  overflow: hidden;
+}
+
+#heure {
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  text-align: right;
+}
+
+.section-droite .groups {
+  width: 80%;
+  height: 50%;
+  background-color: #adfbf0;
+  border-radius: 8px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.groups h3 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.groups a {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+#add-icon {
+  font-size: 150%;
+  margin-right: 10px;
+}
+
+#join-group {
+  font-size: 150%;
+  margin-right: 10px;
+}
+#group {
+  font-size: 180%;
+  margin-right: 10px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+  margin: auto;
+  margin-top: 110px;
+  border-radius: 8px;
+  background-color: #feffcd;
+  box-shadow: 1px 2px 21px #878787, -6px -6px 21px #c1c1bd;
+  position: relative;
+}
+
+.post-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-image: url(pictures/mec.jpeg);
+  background-size: cover;
+  align-self: flex-start;
+  margin: auto;
+}
+
+.post-pic:hover {
+  cursor: pointer;
+}
+
+.posts input {
+  background: none;
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+#media {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.posts a {
+  font-size: large;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  padding-right: 50px;
+}
+
+.posts ion-icon {
+  margin-right: 20px;
+  font-size: 150%;
+}
