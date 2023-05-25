@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.square
+{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.square i
+{
+	position: absolute;
+	inset: 0;
+	border: 2px solid 962E85;
+	transition: 0.5s;
+}
+.square i:nth-child(1)
+{
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2
+{
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+.login 
+{
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.login h2 
+{
+	font-size: 2em;
+	color: #0b0101;
+}
+.login .inputBx 
+{
+	position: relative;
+	width: 100%;
+}
+.login .inputBx input 
+{
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: 2px solid #0b0101;
+	border-radius: 40px;
+	font-size: 1.2em;
+	color: #000000;
+	box-shadow: none;
+	outline: none;
+	background: #DDEEEE;
+}
+.login .inputBx input[type="submit"]
+{
+	color: #ffffff;
+	width: 100%;
+	background:#0000FF;
+	border: none;
+	cursor: pointer;
+}
+.login .inputBx input::placeholder 
+{
+	color: rgba(0, 0, 0, 0.75);
+}
+.login .links
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.login .links a 
+{
+	color: #090000;
+	text-decoration: none;
+}
+form .input-box {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	padding: 0 15px;
+	font-size: 17px;
+	font-weight: 400;
+	color: #000000;
+	border: 1.5px solid #C7BEBE;
+	border-bottom-width: 2.5px;
+	border-radius: 6px;
+	transition: all 0.3s ease;
+	background: white;
+	background: #DDEEEE;
+  }
